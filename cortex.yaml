@@ -6,8 +6,16 @@ info:
       repository: 8x8/auto_hashicorp_vault_knox
   x-cortex-tag: auto_hashicorp_vault_knox
   x-cortex-link:
+    - url: https://github.com/8x8/knox/blob/develop/README.md
+      name: Wiki
+      type: DOCUMENTATION
+    - url: https://res-jenkins.es.8x8.com/job/k8s-helm-knox-cronjob
+      name: Jenkins Build
+      type: BUILD
   x-cortex-owners:
     - type: EMAIL
       email: lance.johnson@8x8.com
   x-cortex-service-groups:
     - automation
+    - nonProductionAsset
+  description: https://github.com/8x8/knox/blob/develop/README.md
