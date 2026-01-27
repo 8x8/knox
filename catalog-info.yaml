@@ -1,0 +1,56 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: knox
+  title: Hashicorp Vault Knox Automation
+  description: Automated service for Hashicorp Vault Knox management
+  tags:
+    - automation
+    - vault
+    - nonProductionAsset
+  annotations:
+    backstage.io/kubernetes-id: auto_hashicorp_vault_knox
+    backstage.io/kubernetes-namespace: default
+    github.com/project-slug: 8x8/knox
+    pagerduty.com/service-id: TODO
+    sonarqube.org/project-key: com._8x8:auto_hashicorp_vault_knox
+    grafana/dashboard-selector: TODO
+    grafana/alert-label-selector: 'component=auto_hashicorp_vault_knox'
+  links:
+    - url: https://github.com/8x8/knox/actions
+      title: Github Actions Build
+      type: build
+      icon: dashboard
+    - url: TODO
+      title: Cloud8 Config
+      type: config
+      icon: github
+    - url: TODO
+      title: GDS deploy tool | GoCD pipeline
+      type: build
+      icon: catalog
+    - url: TODO
+      title: Sonar Project
+      type: dashboard
+      icon: dashboard
+    - url: https://github.com/8x8/knox/blob/develop/README.md
+      title: Wiki
+      type: documentation
+      icon: docs
+    - url: https://res-jenkins.es.8x8.com/job/k8s-helm-knox-cronjob
+      title: Jenkins Build
+      type: build
+      icon: dashboard
+    - url: TODO
+      title: Grafana
+      type: metrics
+      icon: dashboard
+    - url: TODO
+      title: Logs
+      type: logs
+      icon: dashboard
+spec:
+  type: service
+  lifecycle: non-production
+  owner: TODO team name
+  system: TODO system name
